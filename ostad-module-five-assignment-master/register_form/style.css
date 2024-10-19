@@ -1,0 +1,110 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: "Merriweather", serif;
+}
+
+body {
+    background: linear-gradient(160deg, rgb(191, 147, 211) 39%, rgba(0,212,255,1) 100%);    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card {
+    background:  rgba(255, 255, 255, 0.5);
+    backdrop-filter: blur(50px);
+    width: 50%;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 8px;
+}
+
+.card h2 {
+    text-align: center;
+    font-size: 30px;
+    text-transform: capitalize;
+    margin-bottom: 25px;
+    color: rgb(58, 57, 57);
+}
+
+.form-row {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 19px;
+}
+
+.form-group {
+    width: 50%;
+    display: flex;
+    margin-bottom: 20px;
+    /* gap: 13px; */
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.form-group label {
+    width: 40%;
+    font-size: 18px;
+    color: rgb(51, 51, 51);
+}
+
+.form-group input {
+    width: 65%;
+    padding: 8px;
+    border: 1px solid rgb(204, 204, 204);
+    border-radius: 5px;
+    outline: none;
+}
+
+.form-group.gender-group {
+    justify-content: flex-start;
+}
+
+.form-group.gender-group label {
+    display: flex;
+    width: auto;
+    margin-right: 10px;
+    flex-direction: row;
+}
+
+.gender-options {
+    display: flex;
+    align-items: center;
+}
+
+.gender-options input[type="radio"] {
+    margin-right: 5px;
+}
+
+.btn-row{
+    display: flex;
+    gap: 20px;
+}
+.submit-btn {
+    width: 100px;
+    padding: 10px;
+    border: none;
+    color: #fff;
+    background: linear-gradient(160deg, rgb(137, 71, 168) 39%, rgba(0,212,255,0.6) 100%);    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.cancel-btn {
+    width: 100px;
+    padding: 10px;
+    border: none;
+    color: #fff;
+    background: linear-gradient(353deg, rgb(170, 52, 52) 42%, rgba(255,0,0,1) 100%);    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.submit-btn:hover {
+    background: linear-gradient(160deg,rgb(45, 182, 79) 10%, rgba(206,126,244,1) 100%);
+     font-size: 16px;
+}
+.cancel-btn:hover{
+    background: linear-gradient(150deg, rgb(226, 104, 104) 42%, rgba(255,0,0,1) 100%);}
